@@ -1,3 +1,28 @@
-.div{
-    background-color: yellow;
+#container-grid{
+    background-color:rgb(225, 225, 225);
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-cell{
+    background-color: aquamarine;
+    height: 30px;
+    width: 30px;
+    border: 1px black solid;
+    
+}
+
+:hover.grid-cell{
+    opacity: 50%;
+}
+
+.drawn-cell{
+    background-color: black;
+}
+
+button{
+    margin: 5px;
+    padding: 5px
 }
