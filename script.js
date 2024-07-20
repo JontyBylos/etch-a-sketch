@@ -10,9 +10,11 @@ createGrid(80);
 function createCell(){
     const gridCellX = document.createElement("div")
     gridCellX.classList.add("grid-cell")
-    gridCellX.addEventListener("mousemove", () =>{
+    gridCellX.addEventListener("click", () =>{
         gridCellX.classList.add("drawn-cell")
     })
+   
+
     
     
     containerGrid.appendChild(gridCellX)
@@ -31,8 +33,12 @@ function createGrid(cells){
 newGrid.addEventListener("click", () => {
     containerGrid.innerHTML = '';
     const inputCell = inputField.value
+    if (inputCell == ''){
+        createGrid(80)
+    }
+    
     inputField.value = ''
-
+    
     createGrid(inputCell);
 
     //Alternative way to remove all child nodes from containerGrid
