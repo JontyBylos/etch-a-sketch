@@ -1,16 +1,17 @@
 #container-grid{
     background-color:rgb(225, 225, 225);
-    height: 500px;
-    width: 500px;
+    
+    
     display: flex;
     flex-wrap: wrap;
 }
 
 .grid-cell{
-    background-color: aquamarine;
+    background-color: rgb(55, 55, 55);
     height: 30px;
     width: 30px;
     border: 1px black solid;
+    
     
 }
 
@@ -19,7 +20,8 @@
 }
 
 .drawn-cell{
-    background-color: black;
+    
+    background-color: rgb(186, 248, 228);
 }
 
 button{

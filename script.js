@@ -5,7 +5,7 @@ const inputField = document.querySelector("#input-cells")
 
 
 
-createGrid(16);
+createGrid(80);
 
 function createCell(){
     const gridCellX = document.createElement("div")
